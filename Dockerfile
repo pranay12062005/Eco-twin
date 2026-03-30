@@ -18,6 +18,9 @@ RUN npm install --ignore-scripts
 # Generate Prisma Client using the safe v5.22.0
 RUN npx prisma@5.22.0 generate --schema=eco-twin-api/prisma/schema.prisma
 
+# Build the shared package first (compiles schemas.ts -> dist/schemas.js)
+RUN npm run build --workspace=@eco-twin/shared
+
 # Build the Typescript API
 RUN npm run build --workspace=eco-twin-api
 

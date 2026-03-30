@@ -1,9 +1,15 @@
 {
   "name": "@eco-twin/shared",
   "version": "1.0.0",
-  "main": "schemas.ts",
-  "types": "schemas.ts",
+  "main": "dist/schemas.js",
+  "types": "dist/schemas.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.2"
   }
 }
