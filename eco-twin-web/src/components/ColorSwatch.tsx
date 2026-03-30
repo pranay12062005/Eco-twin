@@ -1,5 +1,4 @@
 interface ColorSwatchProps {
-  color: string;
   active: boolean;
   onClick: () => void;
   gradient: string;
