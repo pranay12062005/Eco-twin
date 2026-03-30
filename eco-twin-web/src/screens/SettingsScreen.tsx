@@ -49,7 +49,6 @@ export default function SettingsScreen() {
                 {accents.map(a => (
                   <ColorSwatch
                     key={a.id}
-                    color={a.id}
                     active={accent === a.id}
                     gradient={a.gradient}
                     onClick={() => setAccent(a.id)}
