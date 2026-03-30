@@ -5,7 +5,7 @@ interface ColorSwatchProps {
   gradient: string;
 }
 
-export default function ColorSwatch({ color, active, onClick, gradient }: ColorSwatchProps) {
+export default function ColorSwatch({ active, onClick, gradient }: ColorSwatchProps) {
   return (
     <button
       onClick={onClick}
