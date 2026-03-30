@@ -12,15 +12,16 @@ COPY package*.json ./
 COPY packages/shared/ ./packages/shared/
 COPY eco-twin-api/ ./eco-twin-api/
 
-# Install dependencies (ignoring scripts to strictly install local Prisma safely)
-RUN npm ci
+# Install dependencies but SKIP postinstall scripts
+# (This prevents the broken prisma v7 from auto-running)
+RUN npm ci --ignore-scripts
 
-# Generate Prisma Client specifically reading from the api schema
-RUN npx prisma generate --schema=eco-twin-api/prisma/schema.prisma
+# Explicitly generate Prisma Client using the SAFE v5.22.0
+RUN npx prisma@5.22.0 generate --schema=eco-twin-api/prisma/schema.prisma
 
 # Build the Typescript API
 RUN npm run build --workspace=eco-twin-api
 
 # Start the Express server
-EXPOSE 3000
+EXPOSE 7860
 CMD ["npm", "start", "--workspace=eco-twin-api"]
