@@ -1,0 +1,9 @@
+{
+  "name": "eco-twin",
+  "private": true,
+  "workspaces": [
+    "eco-twin-web",
+    "eco-twin-api",
+    "packages/*"
+  ]
+}

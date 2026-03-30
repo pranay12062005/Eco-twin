@@ -1,0 +1,9 @@
+{
+  "name": "@eco-twin/shared",
+  "version": "1.0.0",
+  "main": "schemas.ts",
+  "types": "schemas.ts",
+  "dependencies": {
+    "zod": "^3.22.0"
+  }
+}
