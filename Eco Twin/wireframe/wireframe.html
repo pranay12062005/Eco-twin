@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eco-Twin Wireframe — Closet Guardian</title>
+  <meta name="description" content="Medium-fidelity wireframe prototype for Eco-Twin: The Closet Guardian app">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+
+<body>
+
+  <!-- ═══ PAGE HEADER ═══ -->
+  <header class="page-header">
+    <h1>Eco-<span>Twin</span> — Wireframe</h1>
+    <p>Medium-Fidelity Prototype · Dark Theme · 375×812px Mobile-First</p>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab-screens">📱 Prototype Flow</button>
+      <button class="tab-btn" data-tab="tab-components">🧩 Components</button>
+      <button class="tab-btn" data-tab="tab-guide">🎨 Style Guide</button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════════
+     TAB 1: SCREEN FLOW (PROTOTYPE)
+     ═══════════════════════════════════════════════════════ -->
+  <div class="tab-content active" id="tab-screens">
+    <div class="flow-container">
+
+      <div class="flow-section">
+        <div class="flow-label">Primary Journey: Splash to Final Save</div>
+        <div class="flow-group">
+
+          <!-- SCREEN 1: Welcome -->
+          <div class="screen-wrapper">
+            <div class="phone-frame">
+              <div class="status-bar"><span>9:41</span>
+                <div class="status-icons">📶 🔋</div>
+              </div>
+              <div
+                style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;text-align:center">
+                <div
+                  style="width:120px;height:120px;border-radius:24px;background:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:32px;box-shadow:var(--shadow-glow)">
+                  <span style="font-size:64px;color:var(--primary)">🌿</span>
+                </div>
+                <h2
+                  style="font-size:32px;font-weight:800;color:var(--text-main);margin-bottom:12px;letter-spacing:-1px">
+                  Eco<span style="color:var(--primary)">Twin</span></h2>
+                <p style="font-size:15px;color:var(--text-muted);margin-bottom:48px;line-height:1.5">Your AI-powered
+                  sustainable fashion companion. Know the impact of every piece you wear.</p>
+
+                <!-- Prototype Connection Point 1 -->
+                <button class="btn btn-primary proto-interactive">➔ Get Started</button>
+                <button class="btn btn-secondary" style="margin-top:16px; border:none; color:var(--text-muted)">Sign
+                  In</button>
+              </div>
+            </div>
+            <div class="screen-label">
+              <h3>1. Welcome</h3>
+              <p>Splash Screen</p>
+            </div>
+          </div>
+
+          <div class="flow-arrow"><svg viewBox="0 0 60 20">
+              <path d="M0 10h56m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2.5" fill="none" />
+            </svg></div>
+
+          <!-- SCREEN 2: Dashboard -->
+          <div class="screen-wrapper proto-target">
+            <div class="phone-frame">
+              <div class="status-bar"><span>9:41</span>
+                <div class="status-icons">📶 🔋</div>
+              </div>
+              <div class="top-nav">
+                <span class="nav-title">Dashboard</span>
+                <div class="nav-right"><button class="nav-btn">☀️</button></div>
+              </div>
+              <div class="scroll-area">
+                <div class="stats-grid">
+                  <div class="stat-card">
+                    <div class="stat-icon">👕</div>
+                    <div class="stat-val">6</div>
+                    <div class="stat-label">Total Items</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon">🌿</div>
+                    <div class="stat-val">5</div>
+                    <div class="stat-label">Sustainable</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon">💳</div>
+                    <div class="stat-val">$386</div>
+                    <div class="stat-label">Closet Value</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon">🔄</div>
+                    <div class="stat-val">68</div>
+                    <div class="stat-label">Total Wears</div>
+                  </div>
+                </div>
+
+                <div class="detail-card">
+                  <div class="title">AVERAGE ECO SCORE</div>
+                  <div class="score-display"><span class="score-number">75</span><span class="score-total">/ 100</span>
+                  </div>
+                </div>
+
+                <div class="detail-card">
+                  <div class="title">CATEGORY BREAKDOWN</div>
+                  <div
+                    style="height:120px;border:1px dashed var(--border-light);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--text-muted)">
+                    Pie Chart Area</div>
+                </div>
+              </div>
+              <nav class="bottom-nav">
+                <button class="nav-item"><span class="icon">🏠</span>Closet</button>
+                <button class="nav-item active"><span class="icon">📊</span>Stats</button>
+
+                <!-- Prototype Connection Point 2 -->
+                <button class="scan-fab proto-interactive">[-]</button>
+
+                <button class="nav-item"><span class="icon">📈</span>Scan</button>
+                <button class="nav-item"><span class="icon">👤</span>Profile</button>
+              </nav>
+            </div>
+            <div class="screen-label">
+              <h3>2. Dashboard</h3>
+              <p>Main Stats Screen</p>
+            </div>
+          </div>
+
+          <div class="flow-arrow"><svg viewBox="0 0 60 20">
+              <path d="M0 10h56m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2.5" fill="none" />
+            </svg></div>
+
+          <!-- SCREEN 3: Camera Scan -->
+          <div class="screen-wrapper proto-target">
+            <div class="phone-frame">
+              <div class="status-bar" style="color:#fff;background:transparent;position:absolute;width:100%;z-index:10">
+                <span>9:41</span>
+                <div class="status-icons">📶 🔋</div>
+              </div>
+              <div class="top-nav" style="background:transparent;position:absolute;width:100%;z-index:10;top:40px">
+                <button class="nav-btn" style="background:rgba(255,255,255,0.15);border:none;color:#fff">←</button>
+                <span class="nav-title" style="color:#fff">Scan Item</span>
+                <button class="nav-btn" style="background:rgba(255,255,255,0.15);border:none;color:#fff">☀️</button>
+              </div>
+              <div
+                style="flex:1;background:#000;display:flex;align-items:center;justify-content:center;position:relative">
+                <div
+                  style="width:260px;height:260px;border:2px solid rgba(255,255,255,0.3);border-radius:24px;position:relative">
+                  <div
+                    style="position:absolute;top:-2px;left:-2px;width:32px;height:32px;border-top:4px solid var(--primary);border-left:4px solid var(--primary);border-radius:8px 0 0 0">
+                  </div>
+                  <div
+                    style="position:absolute;bottom:-2px;right:-2px;width:32px;height:32px;border-bottom:4px solid var(--primary);border-right:4px solid var(--primary);border-radius:0 0 8px 0">
+                  </div>
+                </div>
+              </div>
+              <div style="padding:24px;background:var(--bg-main)">
+
+                <!-- Prototype Connection Point 3 -->
+                <button class="btn btn-primary proto-interactive">📷 Scan & Analyze</button>
+
+                <button class="btn btn-secondary" style="margin-top:12px;border:none">🖼️ Upload from Gallery</button>
+              </div>
+              <nav class="bottom-nav">
+                <button class="nav-item"><span class="icon">🏠</span>Closet</button>
+                <button class="nav-item"><span class="icon">📊</span>Stats</button>
+                <button class="scan-fab" style="box-shadow:0 0 24px rgba(34,166,113,0.6)">[-]</button>
+                <button class="nav-item"><span class="icon">📈</span>Scan</button>
+                <button class="nav-item"><span class="icon">👤</span>Profile</button>
+              </nav>
+            </div>
+            <div class="screen-label">
+              <h3>3. Scan Item</h3>
+              <p>Camera Viewfinder</p>
+            </div>
+          </div>
+
+          <div class="flow-arrow"><svg viewBox="0 0 60 20">
+              <path d="M0 10h56m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2.5" fill="none" />
+            </svg></div>
+
+          <!-- SCREEN 4: AI Tagging -->
+          <div class="screen-wrapper proto-target">
+            <div class="phone-frame">
+              <div class="status-bar"><span>9:41</span>
+                <div class="status-icons">📶 🔋</div>
+              </div>
+              <div class="top-nav"><button class="nav-btn">←</button><span class="nav-title">AI Tagging</span><button
+                  class="nav-btn">⋮</button></div>
+              <div class="scroll-area">
+                <div
+                  style="width:100%;height:320px;background:#222;border-radius:16px;margin-bottom:24px;display:flex;align-items:center;justify-content:center;position:relative">
+                  <span style="font-size:80px">👕</span>
+                  <div
+                    style="position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.6);padding:6px 12px;border-radius:16px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px">
+                    ✨ AI Analyzed</div>
+                </div>
+
+                <div class="detail-card">
+                  <div
+                    style="display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border-light)">
+                    <span style="color:var(--text-muted)">Material</span><span
+                      style="margin-left:auto;font-weight:600">Organic Cotton</span>
+                  </div>
+                  <div
+                    style="display:flex;align-items:center;gap:12px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid var(--border-light)">
+                    <span style="color:var(--text-muted)">Brand</span><span
+                      style="margin-left:auto;font-weight:600">Patagonia</span>
+                  </div>
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <span style="color:var(--text-muted)">Origin</span><span
+                      style="margin-left:auto;font-weight:600">Vietnam</span>
+                  </div>
+                </div>
+
+                <!-- Prototype Connection Point 4 -->
+                <button class="btn btn-primary proto-interactive">Get Eco Verdict</button>
+              </div>
+            </div>
+            <div class="screen-label">
+              <h3>4. AI Tagging</h3>
+              <p>Analysis Results</p>
+            </div>
+          </div>
+
+          <div class="flow-arrow"><svg viewBox="0 0 60 20">
+              <path d="M0 10h56m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2.5" fill="none" />
+            </svg></div>
+
+          <!-- SCREEN 5: Verdict GO -->
+          <div class="screen-wrapper proto-target">
+            <div class="phone-frame" style="border:4px solid rgba(46,204,113,0.5)">
+              <div class="status-bar"><span>9:41</span>
+                <div class="status-icons">📶 🔋</div>
+              </div>
+              <div class="top-nav"><button class="nav-btn">←</button><span class="nav-title">Eco Verdict</span><button
+                  class="nav-btn">📤</button></div>
+              <div class="scroll-area">
+                <div style="text-align:center;margin:16px 0 32px">
+                  <div
+                    style="width:56px;height:56px;border-radius:50%;background:rgba(46,204,113,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--green-go);font-size:24px">
+                    ✔</div>
+                  <h2 style="font-size:22px;font-weight:700;margin-bottom:4px">GO — Sustainable! 🌿</h2>
+                  <p style="font-size:14px;color:var(--text-muted)">This item meets eco-friendly standards</p>
+                </div>
+
+                <div class="detail-card">
+                  <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px">
+                    <div
+                      style="width:40px;height:40px;border-radius:8px;background:rgba(46,204,113,0.15);color:var(--green-go);display:flex;align-items:center;justify-content:center;font-size:20px">
+                      🛡</div>
+                    <div style="flex:1">
+                      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                        <span style="font-size:12px;font-weight:600;color:var(--text-white)">Sustainability Score</span>
+                        <span style="font-size:12px;font-weight:700;color:var(--green-go)">87 / 100</span>
+                      </div>
+                      <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden">
+                        <div style="width:87%;height:100%;background:var(--green-go)"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display:flex;align-items:center;gap:16px">
+                    <div
+                      style="width:40px;height:40px;border-radius:8px;background:rgba(46,204,113,0.15);color:var(--green-go);display:flex;align-items:center;justify-content:center;font-size:20px">
+                      🌍</div>
+                    <div style="flex:1">
+                      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                        <span style="font-size:12px;font-weight:600;color:var(--text-white)">Carbon Footprint</span>
+                        <span style="font-size:12px;font-weight:700;color:var(--green-go)">Low</span>
+                      </div>
+                      <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden">
+                        <div style="width:20%;height:100%;background:var(--green-go)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Prototype End Point -->
+                <button class="btn btn-primary proto-interactive" style="margin-bottom:12px">🔖 Save to Closet</button>
+
+                <button class="btn btn-secondary">Cancel</button>
+              </div>
+            </div>
+            <div class="screen-label">
+              <h3>5. Verdict — GO</h3>
+              <p>Final Save Step</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ─── ALTERNATIVE OUTCOMES ─── -->
+      <div class="flow-section"
+        style="padding-left:106px; border-left:1px dashed rgba(255,255,255,0.1); margin-left:60px; position:relative;">
+        <!-- Connection line going from AI Tagging to alternative outcome -->
+        <div style="position:absolute; left:-60px; top:410px; width:166px; height:1px; background:#18A0FB;"></div>
+        <div style="position:absolute; left:100px; top:405px; color:#18A0FB;"><svg viewBox="0 0 10 10" width="10"
+            height="10">
+            <path d="M0 0l10 5l-10 5z" fill="currentColor" />
+          </svg></div>
+
+        <div class="flow-label" style="background:var(--red-bg);color:var(--red)">Alternative: Verdict STOP</div>
+        <div class="flow-group" style="opacity:0.8">
+          <!-- SCREEN 6b: Verdict STOP -->
+          <div class="screen-wrapper proto-target">
+            <div class="phone-frame" style="border:4px solid rgba(231,69,69,0.3)">
+              <div class="status-bar"><span>9:41</span>
+                <div class="status-icons">📶 🔋</div>
+              </div>
+              <div class="top-nav"><button class="nav-btn">←</button><span class="nav-title">Eco Verdict</span><button
+                  class="nav-btn">📤</button></div>
+              <div class="scroll-area">
+                <div style="text-align:center;margin:16px 0 32px">
+                  <div
+                    style="width:56px;height:56px;border-radius:50%;background:rgba(231,69,69,0.15);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--red);font-size:24px">
+                    ✕</div>
+                  <h2 style="font-size:22px;font-weight:700;margin-bottom:4px">STOP — Not Eco-Friendly 🚫</h2>
+                  <p style="font-size:14px;color:var(--text-muted)">This item has environmental concerns</p>
+                </div>
+                <div class="detail-card">
+                  <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px">
+                    <div
+                      style="width:40px;height:40px;border-radius:8px;background:rgba(231,69,69,0.15);color:var(--red);display:flex;align-items:center;justify-content:center;font-size:20px">
+                      ⚠</div>
+                    <div style="flex:1">
+                      <div style="display:flex;justify-content:space-between;margin-bottom:8px">
+                        <span style="font-size:12px;font-weight:600;color:var(--text-white)">Sustainability Score</span>
+                        <span style="font-size:12px;font-weight:700;color:var(--red)">30 / 100</span>
+                      </div>
+                      <div style="height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden">
+                        <div style="width:30%;height:100%;background:var(--red)"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-danger" style="margin-bottom:12px">🔍 Find Alternatives</button>
+                <button class="btn btn-secondary" style="border-color:rgba(231,69,69,0.5);color:var(--red)">Save
+                  Anyway</button>
+              </div>
+            </div>
+            <div class="screen-label">
+              <h3>Alt. Verdict — STOP</h3>
+              <p>Unsustainable Item</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+   TAB 2: COMPONENT LIBRARY
+   ═══════════════════════════════════════════════════════ -->
+  <div class="tab-content" id="tab-components">
+    <h2 style="font-size:24px;font-weight:800;color:var(--text-main);margin-bottom:4px">Component Library</h2>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:32px">Reusable UI components for Eco-Twin matching
+      the production dark theme design.</p>
+
+    <!-- Specimen wrappers -->
+    <div class="comp-section">
+      <h3 class="comp-title">Bottom Navigation Bar</h3>
+      <div class="comp-specimen comp-specimen-wide">
+        <div class="comp-specimen-label">Default State</div>
+        <nav class="bottom-nav" style="position:static;border-radius:16px;padding-bottom:16px">
+          <button class="nav-item active"><span class="icon">🏠</span>Closet</button>
+          <button class="nav-item"><span class="icon">📊</span>Stats</button>
+          <button class="scan-fab" style="margin-top:-20px">[-]</button>
+          <button class="nav-item"><span class="icon">📈</span>Scan</button>
+          <button class="nav-item"><span class="icon">👤</span>Profile</button>
+        </nav>
+      </div>
+    </div>
+
+    <div class="comp-section">
+      <h3 class="comp-title">Stat Card</h3>
+      <div class="comp-grid">
+        <div class="comp-specimen">
+          <div class="comp-specimen-label">Apperance</div>
+          <div class="stat-card" style="width:160px">
+            <div class="stat-icon">👕</div>
+            <div class="stat-val">6</div>
+            <div class="stat-label">Total Items</div>
+          </div>
+        </div>
+        <div class="comp-specimen">
+          <div class="comp-specimen-label">Hover State</div>
+          <div class="stat-card" style="width:160px;background:var(--bg-card-hover)">
+            <div class="stat-icon">🌿</div>
+            <div class="stat-val">5</div>
+            <div class="stat-label">Sustainable</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="comp-section">
+      <h3 class="comp-title">Clothing Item Card</h3>
+      <div class="comp-grid">
+        <div class="comp-specimen">
+          <div class="comp-specimen-label">Standard Card</div>
+          <div class="item-card" style="width:160px">
+            <div class="item-thumb">👕<span class="badge" style="background:var(--primary)">A</span></div>
+            <div class="item-info">
+              <div class="item-name">Hemp Shorts</div>
+              <div class="item-meta">Bottoms · 10 wears</div>
+            </div>
+          </div>
+        </div>
+        <div class="comp-specimen">
+          <div class="comp-specimen-label">Danger Card</div>
+          <div class="item-card" style="width:160px">
+            <div class="item-thumb">👖<span class="badge" style="background:var(--red)">D</span></div>
+            <div class="item-info">
+              <div class="item-name">Fast-Fashion Tee</div>
+              <div class="item-meta">Tops · 3 wears</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+   TAB 3: STYLE GUIDE
+   ═══════════════════════════════════════════════════════ -->
+  <div class="tab-content" id="tab-guide">
+    <h2 style="font-size:24px;font-weight:800;color:var(--text-main);margin-bottom:4px">Style Guide</h2>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:32px">Design tokens matching the production dark
+      theme app.</p>
+
+    <div class="guide-section">
+      <h3 class="guide-title">Color Palette</h3>
+      <div class="color-grid" style="display:flex;gap:16px;flex-wrap:wrap">
+        <div class="color-swatch">
+          <div class="preview" style="background:#0D1A13"></div>
+          <div class="info">
+            <div class="name">Background (Main)</div>
+            <div class="hex">#0D1A13</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="preview" style="background:#162A1F"></div>
+          <div class="info">
+            <div class="name">Background (Card)</div>
+            <div class="hex">#162A1F</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="preview" style="background:#22A671"></div>
+          <div class="info">
+            <div class="name">Primary Green</div>
+            <div class="hex">#22A671</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="preview" style="background:#F4F7F5"></div>
+          <div class="info">
+            <div class="name">Text (Main)</div>
+            <div class="hex">#F4F7F5</div>
+          </div>
+        </div>
+        <div class="color-swatch">
+          <div class="preview" style="background:#8AA694"></div>
+          <div class="info">
+            <div class="name">Text (Muted)</div>
+            <div class="hex">#8AA694</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="wireframe.js"></script>
+</body>
+
+</html>
