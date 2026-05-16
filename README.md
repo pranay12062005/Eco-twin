@@ -5,8 +5,8 @@
 <h1 align="center">🌿 Eco-Twin</h1>
 
 <p align="center">
-  <strong>Your AI-powered sustainable fashion companion.</strong><br/>
-  Scan, tag, and get eco-verdicts for every piece in your wardrobe.
+  <strong>A sustainable fashion companion — UI/UX prototype.</strong><br/>
+  Browse, tag, and get eco-verdicts for clothing items in a simulated wardrobe.
 </p>
 
 <p align="center">
@@ -14,7 +14,6 @@
   <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
   <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/AI_Powered-22A671?style=for-the-badge&logo=openai&logoColor=white" alt="AI Powered" />
 </p>
 
 ---
@@ -26,9 +25,9 @@
   &nbsp;&nbsp;
   <img src="Eco Twin/assets/screenshots/05_Closet_Populated.png" alt="My Closet" width="180" />
   &nbsp;&nbsp;
-  <img src="Eco Twin/assets/screenshots/06_Scanner_View.png" alt="AI Scanner" width="180" />
+  <img src="Eco Twin/assets/screenshots/06_Scanner_View.png" alt="Scanner View" width="180" />
   &nbsp;&nbsp;
-  <img src="Eco Twin/assets/screenshots/07_Tagging_Results.png" alt="AI Tagging" width="180" />
+  <img src="Eco Twin/assets/screenshots/07_Tagging_Results.png" alt="Item Tagging" width="180" />
 </p>
 
 <p align="center">
@@ -45,67 +44,78 @@
 
 ## ✨ What is Eco-Twin?
 
-**Eco-Twin** is a mobile-first web application that helps users make sustainable fashion choices. Using AI-powered garment analysis, it scans clothing items (via camera or image upload), identifies material composition, brand origin, and carbon footprint — then delivers a clear **GO** or **STOP** eco-verdict so you know the real environmental impact of every piece you wear.
+**Eco-Twin** is a mobile-first UI/UX prototype for a sustainable fashion app. It demonstrates a complete user flow for scanning clothing items, viewing their eco-sustainability data (material, brand, origin, carbon footprint), and receiving a **GO** or **STOP** eco-verdict.
 
-> _"Know the impact of every piece you wear."_
+The app ships with **6 pre-loaded sample clothing items** to showcase the full experience — from browsing your closet to viewing analytics and managing your profile.
 
 ---
 
-## 🚀 Key Features
+## 🚀 Working Features
 
-### 🔍 AI-Powered Garment Scanner
-- **Camera Scan** — Point your device camera at any clothing item or label
-- **Gallery Upload** — Upload images directly from your photo library
-- AI identifies material, brand, origin, and auto-generates sustainability tags
+### 👕 Digital Closet
+- Browse a wardrobe displayed as a card grid with eco-grade badges (A+, A, B+, B, C, D)
+- **Filter by category**: All · 👕 Tops · 👖 Bottoms · 🧥 Outerwear · 👟 Shoes
+- **Sort by**: Newest · Eco Score · A→Z · Most Worn
+- **Search** across item names and brands in real-time
+- **Delete items** from the closet via trash icon on each card
 
-### 🏷️ Smart AI Tagging
-- Detects tags like `🌿 Organic`, `♻️ Recyclable`, `⚠️ Microplastics`, and more
+### 🏷️ Item Detail & Tagging
+- Tap any closet item to view its detail screen
+- Shows detected tags (e.g. `🌿 Organic`, `♻️ Recyclable`, `⚠️ Microplastics`)
 - Displays material composition, brand, country of origin, and carbon footprint (kg CO₂)
 
 ### ✅ / 🚫 Eco Verdict System
-- **GO — Sustainable!** Items meeting eco-friendly standards (score ≥ 50)
-- **STOP — Not Eco-Friendly!** Items with environmental concerns
-- Sustainability score out of 100 with animated progress bars
-- Carbon footprint rating (Low / High) with CO₂ estimates
-
-### 👕 Digital Closet
-- Browse your entire wardrobe in a beautiful card grid
-- Filter by category: `All` · `👕 Tops` · `👖 Bottoms` · `🧥 Outerwear` · `👟 Shoes`
-- Sort by: Newest · Eco Score · A→Z · Most Worn
-- Full-text search across item names and brands
-- Eco-grade badges (A+, A, B+, B, C, D) on every card
+- **GO — Sustainable!** for items scoring ≥ 50/100
+- **STOP — Not Eco-Friendly!** for items scoring below 50
+- Animated sustainability score progress bars
+- Carbon footprint rating (Low / High) with CO₂ values
+- Option to save non-eco items as "Alternatives" for finding replacements
 
 ### 📊 Analytics Dashboard
-- **Quick Stats** — Total items, sustainable count, closet value, total wears
-- **Average Eco Score** — Real-time calculated across all items
-- **Category Breakdown** — Interactive pie chart with legend
-- **Wear Insights** — Most and least worn items
-- **Savings Tracker** — Money saved, CO₂ prevented, duplicates stopped
-
-### 🏆 Gamification & Achievements
-- Unlockable badges: `Eco Starter`, `Scanner Pro`, `Minimalist`, `Green Pioneer`, `7-Day No-Buy`, `Wardrobe Master`
-- Toast notifications for badge unlocks
-- Profile eco-score tracking
+- **Quick Stats**: Total items, sustainable count, closet value ($), total wears
+- **Average Eco Score**: Calculated in real-time across all closet items
+- **Category Breakdown**: CSS conic-gradient pie chart with legend
+- **Wear Insights**: Most and least worn items
+- **Savings Tracker**: Displays money saved, CO₂ prevented, and duplicates stopped (sample data)
+- **Achievement Badges**: 6 badges with unlock conditions (e.g. `Eco Starter`, `Green Pioneer`)
 
 ### 👤 User Profile
-- Customizable name, bio, and avatar (with photo upload)
-- Eco score display with animated ring
-- Quick access to Eco Goals, Saved Alternatives, and Achievements
-
-### ❤️ Saved Alternatives
-- Bookmark non-eco-friendly items for finding sustainable replacements
-- Direct link to eco-friendly brand directories ([Good On You](https://goodonyou.eco/brands/))
+- Displays name, bio, avatar, and overall eco score
+- **Edit Profile**: Modal to change name, bio, and upload a custom avatar photo
+- Access to Saved Alternatives and Achievements
 
 ### ⚙️ Settings & Customization
-- **Dark / Light Mode** — Manual toggle + auto system preference detection
-- **Accent Colors** — Choose from Green, Orange, Amber, or Blue
-- **Push Notification** toggle
-- **Data Management** — Export data as JSON, view storage usage, or reset all data
+- **Dark / Light Mode**: Manual toggle + respects system preference on first load
+- **4 Accent Colors**: Green (default), Orange, Amber, Blue — applied globally
+- **Export Data**: Downloads full app state as a JSON file
+- **Reset All Data**: Clears localStorage and returns to defaults
+- **Storage Usage**: Shows how much localStorage the app is using
 
-### 🔐 Authentication
-- Email/password login & registration
-- Backend API integration with JWT token-based auth
-- Secure closet sync across sessions
+### 💾 Data Persistence
+- All closet items, profile changes, theme preferences, and settings are saved to `localStorage`
+- Data survives page refreshes and browser restarts
+
+### 🎨 UI Polish
+- Smooth screen-to-screen transitions with slide animations
+- Animated entry effects on cards and sections
+- Button ripple effects on click
+- Toast notifications for user actions (save, delete, badge unlock, etc.)
+- Mobile-first responsive design inside a phone frame
+
+---
+
+## ⚠️ Limitations & Non-Functional Features
+
+These features exist in the UI but **do not actually work**:
+
+| Feature | Status |
+|---------|--------|
+| **Camera Scan & AI Analysis** | UI exists, but the backend API is currently offline. Scanning will not produce results. |
+| **Login / Sign Up** | Auth form is present and toggles between modes, but sign-in requires a backend that is not running. |
+| **Push Notifications toggle** | UI toggle only — no actual push notifications are sent. |
+| **My Eco Goals** | Tapping this shows a toast message; there is no goals screen. |
+| **Language selector** | Displays "English" as a static label; not changeable. |
+| **Gallery Upload** | File picker opens, but analysis requires the offline backend API. |
 
 ---
 
@@ -113,14 +123,14 @@
 
 | Layer | Technology |
 |-------|-----------|
-| **Structure** | HTML5 with semantic elements |
-| **Styling** | Vanilla CSS with custom properties, glassmorphism, and CSS animations |
+| **Structure** | HTML5 |
+| **Styling** | Vanilla CSS with custom properties, glassmorphism, dark/light theming |
 | **Logic** | Vanilla JavaScript (ES6+) |
-| **Icons** | [Lucide Icons](https://lucide.dev/) (58 SVGs) |
-| **Backend API** | REST API hosted on [Hugging Face Spaces](https://huggingface.co/spaces/pranaysoyam126/eco-twin-api) |
-| **AI Engine** | AI-powered garment analysis via backend |
-| **Storage** | `localStorage` for offline data persistence |
-| **Design System** | 8pt grid, CSS custom properties, dark/light theming |
+| **Icons** | [Lucide Icons](https://lucide.dev/) (loaded via CDN) |
+| **Storage** | Browser `localStorage` |
+| **Design System** | 8pt grid spacing, CSS custom properties for theming |
+
+> **No build tools, no frameworks, no `npm install` required.** The app is a single HTML file with CSS and JS.
 
 ---
 
@@ -128,23 +138,15 @@
 
 ```
 Eco Twin/
-├── index.html                  # Main app (634 lines, 13 screens)
-├── styles.css                  # Full design system (~48KB)
-├── app.js                      # App logic, state management, API calls (~34KB)
-├── DESIGN_HANDOFF_GUIDE.md     # Figma handoff instructions
+├── index.html                  # Main app — all 12 screens in a single file
+├── styles.css                  # Complete design system (~48KB)
+├── app.js                      # App logic, state management (~34KB)
+├── DESIGN_HANDOFF_GUIDE.md     # Figma handoff instructions for the design
 ├── assets/
 │   ├── ecotwin_logo.png        # App logo
-│   ├── app_logo.png            # Alternative logo variant
-│   ├── icons/                  # 58 Lucide SVG icons
-│   │   ├── activity.svg
-│   │   ├── leaf.svg
-│   │   ├── scan-line.svg
-│   │   └── ... (58 total)
-│   └── screenshots/            # 13 app screen captures
-│       ├── 01_Splash_Screen.png
-│       ├── 05_Closet_Populated.png
-│       ├── 10_Dashboard_Stats.png
-│       └── ... (13 total)
+│   ├── app_logo.png            # Logo variant
+│   ├── icons/                  # 58 exported Lucide SVG icon files
+│   └── screenshots/            # 13 pre-captured screen screenshots
 └── wireframe/                  # Low-fidelity wireframe prototype
     ├── wireframe.html
     ├── wireframe.css
@@ -157,97 +159,51 @@ Eco Twin/
 
 ### Prerequisites
 - Any modern web browser (Chrome, Firefox, Safari, Edge)
-- No build tools, frameworks, or `npm install` needed!
 
 ### Run Locally
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/pranaysoyam1265/eco-twin.git
-   cd eco-twin
-   ```
+```bash
+git clone https://github.com/pranaysoyam1265/eco-twin.git
+cd eco-twin
+```
 
-2. **Open the app**
-   ```bash
-   # Simply open the HTML file in your browser
-   open "Eco Twin/index.html"
-   
-   # Or on Windows
-   start "Eco Twin/index.html"
-   ```
+Then open `Eco Twin/index.html` in your browser. That's it — no server or build step needed.
 
-3. **That's it!** The app runs entirely in the browser — no server required for the UI.
+---
 
-> **Note:** Camera scan and AI analysis features require an active internet connection to communicate with the backend API.
+## 📱 Screens
+
+| # | Screen | Description |
+|---|--------|-------------|
+| 1 | Splash | Logo, tagline, Get Started / Sign In buttons |
+| 2 | Auth | Login / Sign Up form (UI only — backend offline) |
+| 3 | My Closet | Filterable, searchable wardrobe grid with 6 sample items |
+| 4 | Scan Item | Camera viewfinder + gallery upload button (backend offline) |
+| 5 | AI Tagging | Tags, material, brand, origin, carbon data for selected item |
+| 6 | Verdict GO | Green verdict for sustainable items with score bars |
+| 7 | Verdict STOP | Red verdict for non-eco items with alternative suggestions |
+| 8 | Dashboard | Stats grid, eco score, pie chart, wear insights, badges |
+| 9 | Profile | Avatar, eco score, journey links, preferences |
+| 10 | Settings | Theme toggle, accent colors, notifications, data management |
+| 11 | Saved Alternatives | Bookmarked non-eco items |
+| 12 | Edit Profile | Modal for name, bio, and avatar upload |
 
 ---
 
 ## 🎨 Design System
 
-### Color Palette
+### Colors
 
-| Token | Light Mode | Dark Mode | Usage |
-|-------|-----------|-----------|-------|
-| `--primary` | `#22A671` | `#22A671` | Primary actions, eco badges |
-| `--danger` | `#E74545` | `#E74545` | STOP verdicts, warnings |
-| `--surface` | `#FFFFFF` | `#1A1F2B` | Card backgrounds |
-| `--bg` | `#F0F2F5` | `#0F1117` | Page backgrounds |
+| Token | Value | Usage |
+|-------|-------|-------|
+| Primary | `#22A671` | Buttons, badges, accent elements |
+| Danger | `#E74545` | STOP verdicts, warnings, delete actions |
 
-### Accent Themes
-Switch between 4 accent color presets via Settings:
-- 🟢 **Green** (default) — `#22A671`
-- 🟠 **Orange** — `#E67E22`  
-- 🟡 **Amber** — `#F0A500`
-- 🔵 **Blue** — `#3498DB`
+### Accent Themes (switchable in Settings)
+🟢 Green · 🟠 Orange · 🟡 Amber · 🔵 Blue
 
 ### Spacing
-Follows an **8pt grid system** for consistent vertical rhythm:
-- `--sp-1`: 4px · `--sp-2`: 8px · `--sp-3`: 12px · `--sp-4`: 16px · `--sp-6`: 24px · `--sp-8`: 32px
-
----
-
-## 📱 Screens Overview
-
-| # | Screen | Description |
-|---|--------|-------------|
-| 1 | **Splash** | Animated logo + Get Started / Sign In |
-| 2 | **Auth** | Login / Registration with email & password |
-| 3 | **My Closet** | Filterable, searchable wardrobe grid |
-| 4 | **Scan Item** | Camera viewfinder + gallery upload |
-| 5 | **AI Tagging** | Detected tags, material, brand, carbon data |
-| 6 | **Verdict (GO)** | Sustainable — eco score + carbon footprint |
-| 7 | **Verdict (STOP)** | Not eco-friendly — find alternatives |
-| 8 | **Dashboard** | Analytics, pie charts, wear insights, badges |
-| 9 | **Profile** | Avatar, eco score, journey, preferences |
-| 10 | **Settings** | Theme, accent, notifications, data management |
-| 11 | **Saved Alternatives** | Bookmarked items for eco-swap |
-| 12 | **Edit Profile** | Modal for name, bio, avatar upload |
-
----
-
-## 🌐 API Integration
-
-The app connects to a REST API for authentication and AI-powered garment analysis:
-
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/auth/login` | `POST` | User login with email/password |
-| `/items` | `GET` | Fetch user's closet items |
-| `/analyze` | `POST` | AI garment analysis from base64 image |
-
-> API hosted at: `https://pranaysoyam126-eco-twin-api.hf.space`
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+8pt grid: 4px · 8px · 12px · 16px · 24px · 32px
 
 ---
 
@@ -258,6 +214,5 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 <p align="center">
-  <strong>Built with 💚 for a sustainable future</strong><br/>
-  <sub>Eco-Twin v6.0.0 — Making fashion choices that matter</sub>
+  <sub>Eco-Twin v6.0.0 — UI/UX Prototype for Sustainable Fashion</sub>
 </p>
